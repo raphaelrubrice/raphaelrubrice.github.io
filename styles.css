@@ -276,7 +276,8 @@ section{ position:relative; }
   transition:padding-left .2s var(--ease), color .2s var(--ease);
 }
 .link-row:first-child{ border-top:1px solid var(--line); }
-.link-row:hover{ padding-left:.6rem; color:var(--accent); }
+a.link-row:hover{ padding-left:.6rem; color:var(--accent); }
+.link-static{ cursor:default; }
 .link-row .lbl{ color:var(--muted); font-size:var(--t--1); letter-spacing:.1em; text-transform:uppercase; }
 .link-row .val{ display:flex; align-items:center; gap:.7rem; }
 @media (min-width:820px){

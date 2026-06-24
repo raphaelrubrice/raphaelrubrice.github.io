@@ -12,12 +12,12 @@ assets/
   og.png        1200×630 social share card
 ```
 
-## Before you publish — two edits
-1. **LinkedIn URL** — in `index.html`, find the line marked `<!-- TODO -->` and
+## Before you publish, two edits
+1. **LinkedIn URL** in `index.html`, find the line marked `<!-- TODO -->` and
    replace the href with your real LinkedIn URL.
-2. **Email** — search `index.html` for `raphael.rubrice@ens-paris-saclay.fr` and
-   swap in whichever address you want to keep long-term (your Outlook one outlives
-   the ENS account).
+2. **Email** the address is written in word format on purpose (so bots can't
+   scrape it). To change it, search `index.html` for `raphael [dot] rubrice` and
+   edit the words. Swap to whichever address you want to keep long-term.
 
 To change any text, edit `index.html` directly — it's plain HTML, the copy reads
 top to bottom.
