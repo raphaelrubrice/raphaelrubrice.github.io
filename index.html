@@ -52,7 +52,7 @@
     <div class="hero-inner">
       <p class="eyebrow">Helmholtz Munich · Institute of Computational Biology</p>
       <h1>Hi, I'm Raphaël. I work on <span class="glow">AI for biology.</span></h1>
-      <p class="lede">More precisely, I'm a computational-biology researcher interested in single-cell biology, generative models, and one stubborn problem: why our models fall apart in biological situations they haven't seen, when we humans usually find a way through. Right now I'm doing my Master's thesis at Helmholtz Munich, and still very much building my foundations.</p>
+      <p class="lede">More precisely, I'm a computational-biology researcher interested in single-cell biology, generative models, and one stubborn problem: how to help our models not fall apart in biological situations they haven't seen. Right now I'm doing my Master's thesis at Helmholtz Munich in the Fabian Theis lab.</p>
       <div class="meta">
         <a class="btn btn-solid" href="#research">What I'm working on<span aria-hidden="true">→</span></a>
         <a class="btn btn-ghost" href="https://github.com/raphaelrubrice" target="_blank" rel="noopener">GitHub</a>
@@ -104,8 +104,8 @@
         <div class="traj-num">04</div>
         <div class="traj-when">2025-2026</div>
         <div class="traj-what">
-          <h3>Master MVA · <span class="place">ENS Paris-Saclay</span></h3>
-          <p>A demanding, maths-heavy AI master's. Coming from biology with little maths since prépa, it has been a real stretch (optimal transport in particular humbled me), but it's where I'm finally building the mathematical foundations I was missing.</p>
+          <h3>Master MVA · <span class="place">ENS Paris-Saclay & Université Paris-Cité</span></h3>
+          <p>Applied Maths and Computer Science. One of France's most demanding programs. Health track.</p>
         </div>
       </div>
       <div class="traj-row reveal slide">
@@ -113,15 +113,15 @@
         <div class="traj-when">2026</div>
         <div class="traj-what">
           <h3>Master's thesis · <span class="place">Helmholtz Munich</span></h3>
-          <p>In the Theis lab at the Institute of Computational Biology, supervised by Alessandro Palma, Guy Wolf, Lorenzo Consoli and Fabian Theis. Single-cell genomics, virtual cells, and perturbation modeling.</p>
+          <p>In the Theis lab at the Institute of Computational Biology, supervised by Alessandro Palma, Guy Wolf, Lorenzo Consoli and Fabian Theis. To name few aspects, the project combines Reinforcement Learning, Bioagents, Generative modeling and Perturb-seq.</p>
         </div>
       </div>
       <div class="traj-row future reveal slide">
         <div class="traj-num">06</div>
-        <div class="traj-when">2026 →</div>
+        <div class="traj-when">2027 →</div>
         <div class="traj-what">
-          <h3>PhD, applied mathematics · <span class="place">Université de Montréal</span></h3>
-          <p>Officially admitted at Université de Montréal, and hoping to arrange it as a cotutelle between Montréal (with Guy Wolf) and Munich (with Fabian Theis). Still being worked out.</p>
+          <h3>Incoming PhD, applied mathematics · <span class="place">Université de Montréal & ?</span></h3>
+          <p>Officially admitted at Université de Montréal (Guy Wolf, Mila), still being worked out.</p>
         </div>
       </div>
     </div>
@@ -137,12 +137,12 @@
       <div class="vision-body reveal d1">
         <p>The dream is models good enough that a lot of experimental work could start in silico: faster wet-lab campaigns, AI in the loop when deciding which experiments to run, and maybe a bit more scientific discovery along the way. The <b>virtual cell</b> is one avenue toward that.</p>
         <p>What bugs me most is how badly our models do <b>out of distribution</b>. Put them in a context or condition they weren't trained on and they often fail, in ways I'd argue are worse than how we humans cope. Faced with something new, we lean on what we already know, reason about how it's similar to or different from the situation in front of us, and we're often roughly right. We're far from perfect, sometimes we grab the wrong prior and do worse than chance, but the gap between that and how a model behaves in an unfamiliar biological context feels like something worth trying to close.</p>
-        <p>I also suspect <b>AI-assisted experimental design</b> is where progress is likeliest in the next few years, before the harder generalization questions are solved. So I try to keep one foot in each.</p>
+        <p>I also suspect <b>AI-assisted experimental design</b> is where progress is likeliest in the next few years, before the harder generalization questions are solved, given the amount of effort being put into it. So I'm trying to keep one foot in each.</p>
       </div>
       <div class="fields reveal d2">
-        <div class="field-chip"><b>The virtual cell &amp; out-of-distribution</b>the long game: models that hold up in unfamiliar biological contexts</div>
-        <div class="field-chip"><b>AI-assisted experimental design</b>the nearer-term bet: helping choose which experiments to run</div>
-        <div class="field-chip"><b>Single-cell &amp; generative modeling</b>the tools I'm learning to use well</div>
+        <div class="field-chip"><b>The virtual cell &amp; out-of-distribution</b>models that hold up in unfamiliar biological contexts</div>
+        <div class="field-chip"><b>AI-assisted experimental design</b>helping navigate the design space</div>
+        <div class="field-chip"><b>Single-cell &amp; generative modeling</b>current data and frameworks</div>
       </div>
     </div>
   </div>
@@ -187,7 +187,7 @@
         <h3>Explainable clustering for clinical data
           <span class="sub">Helping clinicians read what a clustering result actually means.</span>
         </h3>
-        <p>A six-month research internship on making clustering results interpretable: when patients fall into subgroups, finding ways to explain what actually separates them, with a focus on small cohorts where standard methods struggle. This one is proprietary and under NDA, so I'll keep it high level.</p>
+        <p>A six-month research internship on making clustering results interpretable: when patients fall into subgroups, finding ways to explain what actually separates them, with a focus on small cohorts where standard methods struggle. This one is proprietary and under NDA, so can't say more sorry :(.</p>
       </div>
     </article>
 
@@ -202,7 +202,10 @@
         <h3>Extending THREADS for glioblastoma
           <span class="sub">A multimodal idea that won the award, then taught us how hard the problem is.</span>
         </h3>
-        <p>With four teammates, we proposed extending THREADS, a multimodal foundation-model approach, to bring together the many modalities in the MOSAIC glioblastoma dataset. The proposal is what won the methodology award. In the short time we then had to actually build it, our results were honestly quite poor, and that was the instructive part: integrating that many modalities across different biological scales, in a very low-N setting with noisy signals, is genuinely hard. The heads converge at different rates, the modalities carry different noise levels and structures, and naive integration just doesn't hold up.</p>
+        <p>With four teammates, we proposed extending THREADS, a multimodal foundation-model approach, to bring together the many modalities in the MOSAIC glioblastoma dataset. In the short time we then had after the event to actually finish the project, our results were honestly quite poor, and that was the instructive part: integrating that many modalities across different biological scales, in a very low-N setting with noisy signals, is genuinely hard. The heads converge at different rates, the modalities carry different noise levels and structures, and naive integration just doesn't hold up.</p>
+        <div class="work-links">
+          <a href="https://www.owkin.com/blogs-case-studies/ai-for-glioblastoma-hackathon-a-deep-dive-into-the-winning-solutions" target="_blank" rel="noopener">Link <span class="arr" aria-hidden="true">↗</span></a>
+        </div>
       </div>
     </article>
 
@@ -253,8 +256,8 @@
     <div class="contact-grid">
       <div class="reveal">
         <p class="eyebrow">Now</p>
-        <h2>Munich now, Montréal next.</h2>
-        <p class="where">Finishing my thesis at <b>Helmholtz</b> to conclude the <b>MVA</b>, then crossing the Atlantic for the PhD. Always glad to talk single-cell, generative models, or AI for biology.</p>
+        <h2>More science ahead.</h2>
+        <p class="where">Finishing my thesis at <b>Helmholtz</b> to conclude the <b>MVA</b>, then between Munich and Montréal for the PhD. Always glad to talk single-cell, generative models, or AI for biology.</p>
       </div>
       <div class="links-col reveal d1">
         <div class="link-row link-static">
@@ -266,7 +269,7 @@
           <span class="val">@raphaelrubrice <span class="arr" aria-hidden="true" style="color:var(--accent)">↗</span></span>
         </a>
         <a class="link-row" href="https://www.sciencedirect.com/science/article/pii/S2667318525000133" target="_blank" rel="noopener">
-          <span class="lbl">Publication</span>
+          <span class="lbl">Last Publication</span>
           <span class="val">AI in the Life Sciences, 2025 <span class="arr" aria-hidden="true" style="color:var(--accent)">↗</span></span>
         </a>
         <!-- TODO: replace href with your exact LinkedIn URL -->
