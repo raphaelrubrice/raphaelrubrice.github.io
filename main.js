@@ -7,6 +7,14 @@
 (function () {
   "use strict";
 
+  /* scroll to #top on fresh load so it matches clicking the brand logo */
+  if (!window.location.hash) {
+    window.addEventListener("load", function () {
+      var heroEl = document.getElementById("top");
+      if (heroEl) window.scrollTo({ top: heroEl.offsetTop, behavior: "instant" });
+    });
+  }
+
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* ---------- mobile nav ---------- */
