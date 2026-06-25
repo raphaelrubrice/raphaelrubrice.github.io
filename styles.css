@@ -163,6 +163,11 @@ body::after{
   margin-bottom:var(--s3);
 }
 .hero-avatar img{ width:100%; height:100%; object-fit:cover; }
+.hero-intro{
+  display:flex; align-items:center; gap:var(--s4); margin:var(--s3) 0 0;
+}
+.hero-intro .hero-avatar{ margin-bottom:0; flex-shrink:0; }
+.hero-intro h1{ margin:0; }
 .work-citation{
   font-family:var(--mono); font-size:var(--t--1); color:var(--muted);
   line-height:1.6; letter-spacing:.02em; margin:0 0 var(--s3);
@@ -358,4 +363,8 @@ footer .sig b{ color:var(--accent); font-weight:500; }
   .vision-grid{ grid-template-columns:1fr; gap:var(--s4); }
   .dist-row{ grid-template-columns:1fr; gap:.3rem; }
   .dist-row .d-tag{ order:-1; }
+}
+
+@media (max-width:560px){
+  .hero-intro{ flex-direction:column; align-items:flex-start; }
 }
