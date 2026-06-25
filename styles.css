@@ -157,7 +157,7 @@ body::after{
   margin-top:var(--s4); display:flex; flex-wrap:wrap; gap:1.1rem 1.6rem; align-items:center;
 }
 .hero-avatar{
-  width:96px; height:96px; border-radius:50%; overflow:hidden;
+  width:128px; height:128px; border-radius:50%; overflow:hidden;
   border:1.5px solid rgba(52,217,140,.35);
   box-shadow:0 0 22px rgba(52,217,140,.12);
   margin-bottom:var(--s3);
