@@ -172,13 +172,15 @@ body::after{
   font-family:var(--mono); font-size:var(--t--1); color:var(--muted);
   line-height:1.6; letter-spacing:.02em; margin:0 0 var(--s3);
 }
-.work-citation em{ color:var(--ink); font-style:italic; }
+.work-citation em{ color:var(--muted); font-style:italic; }
+.work-citation strong{ color:var(--ink); font-weight:600; font-style:normal; }
 .work-citation .me{ color:var(--accent); font-weight:600; }
 .work-with{
-  font-family:var(--mono); font-size:var(--t--1); color:var(--muted);
+  font-family:var(--mono); font-size:var(--t--1); color:var(--ink);
   margin:var(--s2) 0 0; letter-spacing:.02em; line-height:1.6;
 }
-.work-with a{ color:var(--muted); text-decoration:underline; text-underline-offset:3px; }
+.work-with::before{ content:"with "; color:var(--accent); font-weight:500; }
+.work-with a{ color:var(--ink); text-decoration:underline; text-underline-offset:3px; }
 .work-with a:hover{ color:var(--accent); }
 .btn{
   font-family:var(--mono); font-size:var(--t--1); letter-spacing:.04em;
