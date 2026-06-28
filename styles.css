@@ -36,7 +36,7 @@
   --t-1:  clamp(1.2rem, 1.1rem + 0.5vw, 1.45rem);
   --t-2:  clamp(1.5rem, 1.25rem + 1.1vw, 2.1rem);
   --t-3:  clamp(2rem, 1.5rem + 2.2vw, 3.2rem);
-  --t-4:  clamp(2.7rem, 1.7rem + 4.6vw, 5.6rem);
+  --t-4:  clamp(2.7rem, 1.7rem + 4.6vw, 4.8rem);
 
   /* space — 8px base */
   --s1: 0.5rem; --s2: 1rem; --s3: 1.5rem; --s4: 2rem;
@@ -139,9 +139,8 @@ body::after{
 .hero-inner{ max-width:46rem; }
 .hero h1{
   font-family:var(--display); font-weight:430;
-  font-size:var(--t-4); line-height:1.01; letter-spacing:-.022em;
+  font-size:clamp(2.2rem, 1.1rem + 3.4vw, 3.8rem); line-height:1.01; letter-spacing:-.022em;
   margin:.7rem 0 0; font-optical-sizing:auto;
-  font-variation-settings:"SOFT" 0,"WONK" 1;
 }
 .hero h1 .glow{
   background:var(--gradient); -webkit-background-clip:text; background-clip:text;
@@ -157,7 +156,7 @@ body::after{
   margin-top:var(--s4); display:flex; flex-wrap:wrap; gap:1.1rem 1.6rem; align-items:center;
 }
 .hero-avatar{
-  width:176px; height:176px; border-radius:50%; overflow:hidden;
+  width:130px; height:130px; border-radius:50%; overflow:hidden;
   border:1.5px solid rgba(52,217,140,.35);
   box-shadow:0 0 22px rgba(52,217,140,.12);
   margin-bottom:var(--s3);
@@ -304,7 +303,10 @@ section{ position:relative; }
 .link-row:first-child{ border-top:1px solid var(--line); }
 a.link-row:hover{ padding-left:.6rem; color:var(--accent); }
 .link-static{ cursor:default; }
-.link-row .lbl{ color:var(--muted); font-size:var(--t--1); letter-spacing:.06em; text-transform:uppercase; }
+.link-row .lbl{
+  color:var(--muted); font-size:var(--t--1); letter-spacing:.06em; text-transform:uppercase;
+  display:inline-flex; align-items:center; white-space:nowrap; flex-shrink:0;
+}
 .ico{
   width:1.05em; height:1.05em;
   vertical-align:-0.16em;
@@ -350,6 +352,10 @@ footer .sig b{ color:var(--accent); font-weight:500; }
    ============================================================ */
 @media (min-width:640px){ .readout{ display:block; } }
 
+@media (max-width:560px){
+  .hero-intro{ flex-direction:column; align-items:flex-start; }
+}
+
 @media (max-width:720px){
   .nav{
     position:fixed; inset:62px 0 auto 0; flex-direction:column; gap:0;
@@ -376,6 +382,3 @@ footer .sig b{ color:var(--accent); font-weight:500; }
   .dist-row .d-tag{ order:-1; }
 }
 
-@media (max-width:560px){
-  .hero-intro{ flex-direction:column; align-items:flex-start; }
-}
