@@ -305,6 +305,15 @@ section{ position:relative; }
 a.link-row:hover{ padding-left:.6rem; color:var(--accent); }
 .link-static{ cursor:default; }
 .link-row .lbl{ color:var(--muted); font-size:var(--t--1); letter-spacing:.06em; text-transform:uppercase; }
+.ico{
+  width:1.05em; height:1.05em;
+  vertical-align:-0.16em;
+  flex:none;
+  color:currentColor;
+}
+.link-row .val .ico{ margin-right:.6rem; color:var(--muted); }
+.link-row:hover .ico{ color:var(--accent); }
+.work-links a .ico{ margin-right:.4rem; }
 .link-row .val{ display:flex; align-items:center; gap:.7rem; }
 @media (min-width:820px){
   .contact-grid{ grid-template-columns:1fr 1fr; gap:var(--s7); align-items:center; }
