@@ -311,8 +311,8 @@ a.link-row:hover{ padding-left:.6rem; color:var(--accent); }
   flex:none;
   color:currentColor;
 }
-.link-row .val .ico{ margin-right:.6rem; color:var(--muted); }
-.link-row:hover .ico{ color:var(--accent); }
+.link-row .lbl .ico{ margin-right:.45rem; color:var(--muted); }
+.link-row:hover .lbl .ico{ color:var(--accent); }
 .work-links a .ico{ margin-right:.4rem; }
 .link-row .val{ display:flex; align-items:center; gap:.7rem; }
 @media (min-width:820px){
