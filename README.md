@@ -1,2 +1,2 @@
 # My personal website
-https://raphaelrubrice.com
+https://raphaelrubrice.github.io
